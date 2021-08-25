@@ -1,5 +1,5 @@
 {
-    "name": "PINKY BY PLK",
+    "name": "PINKY V2 BY AFNAN PLK",
     "description": "pinky bot - re-edited from asena. World’s first UserBot made for WhatsApp.",
     "logo": "https://avatars.githubusercontent.com/u/83832372?v=4",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
@@ -71,6 +71,11 @@
             "required": true,
             "value": "false"
         },
+         "THERI_LIST": {
+            "description": "bad word ban...  add the bad words you dont allow in your grp (THERI_KICK must be true to run this feature) example: plk-dqz,f**k,d**k",
+            "required": true,
+            "value": "false"
+        },
         "SEND_READ": {
             "description": "Görüldü atmak istiyorsanız true yazın. Write true if you want to throw seen.",
             "required": true,
@@ -126,7 +131,7 @@
             "value": "default"
         },
         "WORK_TYPE": {
-            "description": "WhatsAsena Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "description": "pinky  Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot. and if you use “admin”, only admin can use bot and not all feature (only features needed to maintain a standerd group)",
             "required": true,
             "value": "private"
         },
@@ -168,6 +173,11 @@
             "required": false,
             "value": "default"
         },
+        "CHANGE_BGM_TO": {
+            "description": "Dont leave this blank choose the bgm you need - enter one or two",
+            "required": true,
+            "value": "one"
+        },
         "DEMOTE_MESSAGE": {
             "description": "Customizable Demote Message! Use => default, to change back.",
             "required": false,
@@ -182,6 +192,10 @@
             "description": "Gan Style eklentisi için resim bağlantısı yazın. Type image link for Gan Style plugin.",
             "required": true,
             "value": "https://i.hizliresim.com/loUtAb.jpg"
+        },
+        "TAG_REPLY": {
+            "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
+            "required": false          
         },
         "NO_ONLINE": {
             "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",

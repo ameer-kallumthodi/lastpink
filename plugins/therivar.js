@@ -1,7 +1,5 @@
-/* Copyright (C) 2020 Yusuf Usta.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
+/* Copyright (C) 2020 afnanplk
+PINKY V2
 */
 
 const Asena = require('../events');
@@ -19,26 +17,16 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     var THERI_off = ''
    
     if (config.LANG == 'EN') {
-        l_dsc = 'chilla theri vilichaal spot kick. -bot owner command'
-        alr_on = 'Antilink is already open!'
-        alr_off = 'Antilink is currently closed!'
-        THERI_on = '*eni chilla theri vilcha kick akkum*'
-        THERI_off = '*eni enth theri vennelum vili*'
+        l_dsc = 'members will be removed when specified bad words are used...'        
+        THERI_on = 'ᴍᴇᴍʙᴇʀꜱ ᴡɪʟʟ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ɪꜰ ʙᴀᴅ ᴡᴏʀᴅꜱ ᴀʀᴇ ᴜꜱᴇᴅ'
+        THERI_off = 'ᴍᴇᴍʙᴇʀꜱ ᴡɪʟʟ ɴᴏᴛ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ɪꜰ ʙᴀᴅ ᴡᴏʀᴅꜱ ᴀʀᴇ ᴜꜱᴇᴅ'
     }
    
-    if (config.LANG == 'HI') {
-        l_dsc = 'एंटीलिंक टूल को सक्रिय करता है।'
-        alr_on = 'एंटीलिंक पहले से ही खुला है!'
-        alr_off = 'एंटीलिंक वर्तमान में बंद है!'
-        THERI_on = 'bgm option turndा!'
-        THERI_off = 'bgm option turned off'
-    }
+   
     if (config.LANG == 'ML') {
-        l_dsc = 'ആന്റിലിങ്ക് ഉപകരണം സജീവമാക്കുന്നു.'
-        alr_on = 'ആന്റിലിങ്ക് ഇതിനകം തുറന്നു!'
-        alr_off = 'ആന്റിലിങ്ക് നിലവിൽ അടച്ചിരിക്കുന്നു!'
-        THERI_on = 'bgm option turned on'
-        THERI_off = 'bgm option turned off'
+        l_dsc = 'നിർദ്ദിഷ്ട മോശം വാക്കുകൾ വിളിക്കുമ്പോൾ അംഗത്തെ നീക്കംചെയ്യുന്നു '
+        THERI_on = 'മോശം വാക്കുകൾ ഉപയോഗിച്ചാൽ അംഗങ്ങളെ നീക്കം ചെയ്യും'
+        THERI_off = 'മോശം വാക്കുകൾ ഉപയോഗിച്ചാൽ അംഗങ്ങളെ നീക്കം ചെയ്യില്ല'
     }
    
     Asena.addCommand({pattern: 'theri ?(.*)', fromMe: true, desc: l_dsc, usage: '.theri no / yes' }, (async (message, match) => {
